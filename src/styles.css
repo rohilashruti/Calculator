@@ -1,0 +1,73 @@
+@import url("https://fonts.cdnfonts.com/css/calculator");
+
+.App {
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  /* background: linear-gradient(to right, #f875aa, #ffdfdf); */
+  background: #f4f4f4;
+  font-family: "Calculator", sans-serif;
+}
+.calculator-grid {
+  display: grid;
+  padding-left: 530px;
+  margin-top: 2rem;
+  //padding-left: 520px;
+  grid-template-columns: repeat(4, 5rem);
+  grid-template-rows: minmax(7rem, auto) repeat(5, 5rem);
+}
+
+.span-two {
+  grid-column: span 2;
+}
+
+.output {
+  grid-column: 1/-1;
+  /* background-color: rgba(0, 0, 0, 0.75); */
+  background-color: #dcdcdc;
+  display: flex;
+  color: #aedefc;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding: 0.75rem;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.output .previous-operand {
+  /* color: #daddb1; */
+  color: #333333;
+  font-size: 2.6rem;
+}
+.calculator-grid > button.equal-sign {
+  background-color: #4caf50; /* Green */
+  color: #ffffff;
+}
+
+.output .current-operand {
+  /* color: wheat; */
+  color: #333333;
+  font-size: 3rem;
+}
+
+.calculator-grid > button {
+  border: 1px solid #dcdcdc;
+  /* background-color: rgba(255, 255, 255, 0.75); */
+  background-color: #ffffff;
+  cursor: pointer;
+  outline: none;
+  cursor: pointer;
+  font-family: system-ui;
+  font-size: 1.6rem;
+}
+.calculator-grid > button:hover,
+.calculator-grid > button:focus {
+  /* background-color: rgba(255, 255, 255, 0.5); */
+  background-color: #e0e0e0;
+}
+
+.span-two {
+  grid-column: span 2;
+}
